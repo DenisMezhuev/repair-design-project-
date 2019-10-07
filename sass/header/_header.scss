@@ -1,0 +1,106 @@
+@mixin font {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: futurabookc, sans-serif;
+
+}
+@mixin fontColor {
+    color: #E3B873;
+    
+}
+@media screen and (min-width: 501px){
+    .header__nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:  83px;
+        @include font;
+       
+        background: #131313;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid red;
+            width: 42%;
+            
+            
+                li{
+                   
+                   
+                  box-sizing: border-box;
+	           
+                }
+        }
+        .header__nav{
+            p{
+                
+                @include fontColor;
+            }
+            a{
+               
+                @include fontColor;
+            }
+        }
+        .header__nav_button{
+            background: #E3B873;
+           // background: url(../../images/Rectangle\ 2.png) no-repeat;
+         @include font;
+            font-size: 13px;
+            border-radius: 5%;
+            height: 37px;
+            width: 161px;
+            text-align: center;
+        }
+    
+        .header__nav__ul{
+           
+            a{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                   @include fontColor;
+                }
+            }
+        }
+        
+    }
+    @mixin displayNone{
+        .header__nav__ul{
+            display: none;
+        }
+        .header__nav_button{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 500px){
+       @include displayNone;
+
+
+       .header__nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 58px;
+        font-size: 12px;
+
+text-transform: uppercase;
+      
+        background: #131313;
+        p{
+                
+            @include fontColor;
+        }
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            font-family: futurabookc, sans-serif;
+           
+        }
+        }
+    }

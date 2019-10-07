@@ -1,0 +1,98 @@
+@media screen and (min-width: 501px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 83px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: futurabookc, sans-serif;
+    background: #131313;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid red;
+    width: 42%;
+  }
+  ul li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header__nav p {
+    color: #E3B873;
+  }
+  .header__nav a {
+    color: #E3B873;
+  }
+  .header__nav_button {
+    background: #E3B873;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: futurabookc, sans-serif;
+    font-size: 13px;
+    border-radius: 5%;
+    height: 37px;
+    width: 161px;
+    text-align: center;
+  }
+  .header__nav__ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__nav__ul a:hover {
+    color: #E3B873;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__nav__ul {
+    display: none;
+  }
+  .header__nav_button {
+    display: none;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 58px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #131313;
+  }
+  .header__nav p {
+    color: #E3B873;
+  }
+  .header__nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-family: futurabookc, sans-serif;
+  }
+}
+/*# sourceMappingURL=style.css.map */
